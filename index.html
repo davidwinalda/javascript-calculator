@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+  body{
+    background-color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .calculator {
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: aqua;
+    padding: 5px;
+  }
+
+  .buttons {
+    width: 275px;
+    text-align: center;
+    margin:10px auto;
+  }
+
+  .button{
+    float: left;
+    height: 40px;
+    width: 68px;
+    color: #f19953;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .textbox {
+    margin: 10px 0px 5px 0px;
+    text-align: right;
+    border: none;
+    height: 25px;
+    width: 275px;
+    background-color: #000;
+    color: #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="calculator" name="Calc">
+    <h1>Simple Calculator</h1>
+    <input type="text" name="Input" id="textbox" class="textbox" readonly>
+    <div class="buttons">
+      <button class="button" id="clear">AC</button>
+      <button class="button" id="CE"></button>
+      <button class="button" id="modulus">%</button>
+      <button class="button" id="divide">/</button>
+      <button class="button" id="7">7</button>
+      <button class="button" id="8">8</button>
+      <button class="button" id="9">9</button>
+      <button class="button" id="multiply">*</button>
+      <button class="button" id="4">4</button>
+      <button class="button" id="5">5</button>
+      <button class="button" id="6">6</button>
+      <button class="button" id="minus">-</button>
+      <button class="button" id="1">1</button>
+      <button class="button" id="2">2</button>
+      <button class="button" id="3">3</button>
+      <button class="button" id="plus">+</button>
+      <button class="button" id="dot">.</button>
+      <button class="button" id="0">0</button>
+      <button class="button" id="Ans"></button>
+      <button class="button" id="equals">=</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
